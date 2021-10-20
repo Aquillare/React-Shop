@@ -3,13 +3,17 @@ import '../styles/Order.scss';
 
 const Order = () => {
     return(
-        <div class="order">
+        <div className="order">
             <p>
-                <span>03.25.21</span>
+                <span>04.25.2021</span>
                 <span>6 articles</span>
             </p>
             <p>
-                 <span>$560.00</span>
+                <span>$ 120,00</span>
+                <img 
+                 src="./src/static/icons/flechita.svg"
+                 alt="arrow"
+                 className="arrow-img"/>
             </p>
         </div>
     );
