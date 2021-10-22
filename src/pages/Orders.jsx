@@ -1,8 +1,8 @@
 import React from "react";
 import OrderItem from '../components/OrderItem';
-import '../styles/Order.scss';
+import '../styles/Orders.scss';
 
-const Order = () => {
+const Orders = () => {
     return(
         <div className="my-orders">
             <div className="my-orders-container">
@@ -18,4 +18,4 @@ const Order = () => {
     );
 };
 
-export default Order;
+export default Orders;
