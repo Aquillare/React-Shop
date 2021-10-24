@@ -31,7 +31,7 @@ const NewPassword = () => {
                     </label>
                     <input 
                         type="password"
-                        id="password" 
+                        id="password2" 
                         placeholder="******"
                         className="input input-password"    
                     />

@@ -3,25 +3,25 @@ import '../styles/SendEmail.scss';
 
 const SendEmail= () => {
     return(
-        <div clasName="login">
-            <div clasName="form-container">
-                <img src="src/static/logos/logo_yard_sale.svg" alt="logo" clasName="logo"/>
-                <h1 clasName="title">
+        <div className="login">
+            <div className="form-container">
+                <img src="src/static/logos/logo_yard_sale.svg" alt="logo" className="logo"/>
+                <h1 className="title">
                     Email has been sent!
                 </h1>
-                <p clasName="subtitle">
+                <p className="subtitle">
                     Please check your inbox for instruccions
                     on how to reset the password
                 </p>
-                <div clasName="email-image">
+                <div className="email-image">
                     <img src="src/static/icons/email.svg" alt="email"/>
                 </div>
                 
                     <button
                         type="submit"
-                        clasName="primary-button login-button"   
+                        className="primary-button login-button"   
                     >Login</button>
-                    <p clasName="ressend">
+                    <p className="ressend">
                         <span>Didn't recive the email?</span>
                         <a href="/">Resend</a>
                     </p>

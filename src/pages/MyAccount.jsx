@@ -3,28 +3,28 @@ import '../styles/MyAccount.scss';
 
 const MyAccount = () => {
     return(
-        <div clasName="login">
-            <div clasName="form-container">
-                <h1 clasName="title">
+        <div className="login">
+            <div className="form-container">
+                <h1 className="title">
                     My account
                 </h1>
-                <form action="/" clasName="form">
-                    <label htmlFor="name" clasName="label">Name</label>
-                    <p clasName="value">
+                <form action="/" className="form">
+                    <label htmlFor="name" className="label">Name</label>
+                    <p className="value">
                         Camila Yoko
                     </p>
-                    <label htmlFor="email" clasName="label">Email address</label>
-                    <p clasName="value">
+                    <label htmlFor="email" className="label">Email address</label>
+                    <p className="value">
                         camilayoko@gmail.com
                     </p>
-                    <label htmlFor="password" clasName="label">Password</label>
-                    <p clasName="value">
+                    <label htmlFor="password" className="label">Password</label>
+                    <p className="value">
                         ******
                     </p>
                     <input 
                     type="submit"
                     value="Edit"
-                    clasName="secondary-button"  
+                    className="secondary-button"  
                     />
                 </form>
             </div>
