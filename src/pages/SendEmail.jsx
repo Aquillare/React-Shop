@@ -1,11 +1,14 @@
 import React from 'react';
 import '../styles/SendEmail.scss';
 
+import logo from '@logos/logo_yard_sale.svg';
+import email from '@icons/email.svg';
+
 const SendEmail= () => {
     return(
         <div className="login">
             <div className="form-container">
-                <img src="src/static/logos/logo_yard_sale.svg" alt="logo" className="logo"/>
+                <img src={logo} alt="logo" className="logo"/>
                 <h1 className="title">
                     Email has been sent!
                 </h1>
@@ -14,7 +17,7 @@ const SendEmail= () => {
                     on how to reset the password
                 </p>
                 <div className="email-image">
-                    <img src="src/static/icons/email.svg" alt="email"/>
+                    <img src={email} alt="email"/>
                 </div>
                 
                     <button
