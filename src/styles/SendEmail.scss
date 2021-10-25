@@ -1,5 +1,4 @@
-@import 'global.scss';
-
+@use './global/global.scss';
 .login{
     width: 100%;
     height: 100vh;
@@ -14,14 +13,14 @@
     justify-items: center;
     
 }
-.logo{
+.logo-login{
     width: 150px;
     margin-bottom: 44px;
     justify-self: center;
     display:none;
 }
 
-.title{
+.title-login{
     font-size: var(--lg);
     margin-bottom: 8px;
     text-align: center;
@@ -75,7 +74,7 @@
 }
 
 @media (max-width:640px){
-    .logo{
+    .logo-login{
         display: block;
     }
 

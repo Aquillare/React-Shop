@@ -1,8 +1,14 @@
-import React from 'react';
+import React,{useState} from 'react';
 import '@styles/ProductItem.scss';
 import addToCart from '@icons/bt_add_to_cart.svg';
 
 const ProductItem = () => {
+    const [cart, setCart] = useState([]);
+
+    const handleClick = () => {
+        setCart([]);
+    }
+
     return(
         <div className="product-card">
             <img 
@@ -16,7 +22,7 @@ const ProductItem = () => {
                     <p>Game Boy</p>
                 </div>
                 <div>
-                    <figure className="produc-info-figure">
+                    <figure onClick={handleClick} className="produc-info-figure">
                         <img src={addToCart} alt="add-card"/>
                     </figure>
                 </div>   

@@ -8,8 +8,8 @@ const RecoveryPassword = () => {
     return(
         <div className="login">
             <div className="form-container">
-                <img src={logo} alt="logo" className="logo"/>
-                <h1 className="title">
+                <img src={logo} alt="logo" className="logo-login"/>
+                <h1 className="title-login">
                     Email has been sent!
                 </h1>
                 <p className="subtitle">

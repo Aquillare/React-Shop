@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import '@styles/global.scss';
+import '@styles/global/global.scss';
 import Home from '@pages/Home';
 import NotFound from '@pages/NotFound';
 import Layout from '@containers/Layout';

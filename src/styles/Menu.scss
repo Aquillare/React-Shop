@@ -1,11 +1,15 @@
-@import 'global.scss';
+@use '@styles/global/global.scss';
 
 .desktop-menu{
-    width: 100px;
+    width: 194px;
     height: auto;
     border: 1px solid var(--very-light-pink);
     padding: 20px 20px 0 20px;
     border-radius: 8px;
+    position: absolute;
+    top: 60px;
+    right:40px;
+
 }
 .desktop-menu ul{   
     list-style: none;
