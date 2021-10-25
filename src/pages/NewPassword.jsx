@@ -5,14 +5,14 @@ import logo from '@logos/logo_yard_sale.svg';
 
 const NewPassword = () => {
     return(
-        <div className="login">
-            <div className="form-container">
+        <div className="NewPassword">
+            <div className="NewPassword-container">
                 <img 
                     src={logo}
                     alt="logo"
-                    className="logo-login"
+                    className="logo"
                 />
-                <h1 className="title-login">
+                <h1 className="title">
                     Create a new password
                 </h1>
                 <p className="subtitle"> 
@@ -39,7 +39,7 @@ const NewPassword = () => {
                     />
                     <input type="submit"
                         value="Confirm"
-                        className="primary-button login-button"     
+                        className="primary-button confirm-button"     
                     />
                 </form>
             </div>

@@ -1,6 +1,6 @@
-@use './global/global.scss';
 
-.product-card{
+
+.ProductItem{
     width: 240px;
 }
 .product-img{
@@ -27,11 +27,23 @@
 }
 
 @media (max-width: 640px){
-    .product-card{
+    .ProductItem{
         width: 140px;
     }
     .product-img{
         width: 140px;
         height: 140px;
+    }
+    figure img{
+        width: 24px;
+        height: 24px;
+    }
+    .product-info-text p:nth-child(1){
+        font-weight: bold;
+        font-size: var(--sm);
+    }
+    .product-info-text p:nth-child(2){
+        font-size: var(--sm);
+        color: var(--very-light-pink);
     }
 }

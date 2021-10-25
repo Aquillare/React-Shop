@@ -25,7 +25,7 @@ const Header = () => {
                 <img 
                 src={logo}
                 alt="logo"
-                className="logo"
+                className="logo-nav"
                 />
 
                 <ul>

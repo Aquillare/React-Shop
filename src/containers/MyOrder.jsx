@@ -4,7 +4,7 @@ import "@styles/MyOrder.scss/";
 
 const MyOrder = () => {
     return(
-        <aside className="product-detail">
+        <aside className="MyOrder">
             <div className="title-container">
                 <img src="./src/static/icons/flechita.svg" alt="arrow"/>
                 <p className="title">My order</p>

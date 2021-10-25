@@ -5,7 +5,7 @@ import arrow from '@icons/flechita.svg';
 
 const Order = () => {
     return(
-        <div className="order">
+        <div className="Order">
             <p>
                 <span>04.25.2021</span>
                 <span>6 articles</span>

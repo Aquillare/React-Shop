@@ -3,8 +3,8 @@ import '../styles/CreateAccount.scss';
 
 const CreateAccount = () => {
     return(
-        <div className="login">
-            <div className="form-container">
+        <div className="CreateAccount">
+            <div className="CreateAccount-container">
                 <h1 className="title">My account</h1>
                 <form action="/" className="form">
                     <label htmlFor="name" className="label">
@@ -32,7 +32,7 @@ const CreateAccount = () => {
                     />
                     <button 
                     type="button"
-                    className="primary-button login-button"
+                    className="primary-button create-button"
                     >Create
                     </button>
                 </form>

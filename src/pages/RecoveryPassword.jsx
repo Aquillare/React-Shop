@@ -1,33 +1,24 @@
 import React from 'react';
-import '../styles/RecoveryPassword.scss';
+import '@styles/RecoveryPassword.scss';
 
 import logo from '@logos/logo_yard_sale.svg';
-import email from '@icons/email.svg';
 
 const RecoveryPassword = () => {
     return(
-        <div className="login">
-            <div className="form-container">
+        <div className="PasswordRecovery">
+            <div className="PasswordRecovery-container">
                 <img src={logo} alt="logo" className="logo-login"/>
-                <h1 className="title-login">
-                    Email has been sent!
+                <h1 className="title-center">
+                    Password recovery
                 </h1>
                 <p className="subtitle">
-                    Please check your inbox for instruccions
-                    on how to reset the password
+                Inform the email address used to create your account
                 </p>
-                <div className="email-image">
-                    <img src={email} alt="email"/>
-                </div>
-                
-                    <button
-                        type="submit"
-                        className="primary-button login-button"   
-                    >Login</button>
-                    <p className="ressend">
-                        <span>Didn't recive the email?</span>
-                        <a href="/">Resend</a>
-                    </p>
+                <form action="/" className="form">
+                    <label htmlFor="email" className="label">Email addres</label>
+                    <input type="text" id="email" className="input input-email"/>
+                    <button type="button" className="primary-button login-button">Confirm</button>
+                </form>
             </div>
         </div>
     );

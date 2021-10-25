@@ -4,12 +4,12 @@ import '../styles/Checkout.scss';
 
 const Checkout = () => {
     return(
-        <div className="my-order">
+        <div className="Checkout">
 
-        <div className="my-order-container">
+        <div className="Checkout-container">
             <h1 className="title">My order</h1>
 
-            <div className="my-order-content">
+            <div className="Checkout-content">
 
                 <div className="order">
                     <p>

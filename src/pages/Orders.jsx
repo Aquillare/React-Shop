@@ -4,11 +4,11 @@ import '../styles/Orders.scss';
 
 const Orders = () => {
     return(
-        <div className="my-orders">
-            <div className="my-orders-container">
+        <div className="Orders">
+            <div className="Orders-container">
                 <h1 className="title">My orders</h1>
                 
-                <div className="my-orders-content">
+                <div className="Orders-content">
                     <OrderItem/>
                 </div>
 

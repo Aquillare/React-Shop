@@ -6,10 +6,10 @@ import email from '@icons/email.svg';
 
 const SendEmail= () => {
     return(
-        <div className="login">
+        <div className="SendEmail">
             <div className="form-container">
-                <img src={logo} alt="logo" className="logo-login"/>
-                <h1 className="title-login">
+                <img src={logo} alt="logo" className="logo"/>
+                <h1 className="title-center">
                     Email has been sent!
                 </h1>
                 <p className="subtitle">
@@ -24,7 +24,7 @@ const SendEmail= () => {
                         type="submit"
                         className="primary-button login-button"   
                     >Login</button>
-                    <p className="ressend">
+                    <p className="resend">
                         <span>Didn't recive the email?</span>
                         <a href="/">Resend</a>
                     </p>
