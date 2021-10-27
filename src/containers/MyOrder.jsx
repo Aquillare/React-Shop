@@ -8,6 +8,14 @@ import AppContext from "../context/AppContext";
 const MyOrder = () => {
     const {state} = useContext(AppContext);
 
+    
+    const sumTotal = () => {
+        const reducer = (accumulator,currentValue) => accumulator+currentValue.price;
+        const sum = state.cart.reduce(reducer, 0);
+
+        return sum;
+    }
+
     return(
         <aside className="MyOrder">
             <div className="title-container">
@@ -15,14 +23,15 @@ const MyOrder = () => {
                 <p className="title">My order</p>
             </div>
             <div className="my-order-content">
-                {state.cart.map( item => 
-                  <OrderItem product={item} key={`orderItem-${item.id}`}/>)}  {/*Usamos `orderoItem-${}` para agregar un texto al numero del id y asi no tener conflictos ya que usamos es id en el key del map que usamos en el compoenente productList */}        
+                {state.cart.map( product => 
+                  <OrderItem product={product} key={`OrderItem-${product.id}`}/>)
+                  }  {/*Usamos `orderoItem-${}` para agregar un texto al numero del id y asi no tener conflictos ya que usamos es id en el key del map que usamos en el compoenente productList */}        
 
                 <div className="order">
                     <p>
                         <span>Total</span>
                     </p>
-                    <p>$560</p>
+                    <p>${sumTotal()}</p>
                 </div>
                     <button 
                     type="button"

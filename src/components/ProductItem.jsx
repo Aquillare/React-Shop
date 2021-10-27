@@ -7,7 +7,7 @@ const ProductItem = ({product}) => {
     const {addToCart} = useContext(AppContext);  //recibimos la funcion addToCart del contexto de la app.
 
     const handleClick = (item) => {
-        addToCart([item]);
+        addToCart(item);
     }
 
     return(
