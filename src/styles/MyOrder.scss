@@ -5,6 +5,8 @@
     padding: 24px;
     position: absolute;
     right: 0;
+    top:62px;
+    background-color: var(--white);
 }
 
 .title-container{
@@ -61,7 +63,7 @@
 }
 
 @media(max-width: 640px){
-    .product-detail{
+    .MyOrder{
         width: 100%;
     }
 }

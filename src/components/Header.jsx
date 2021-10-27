@@ -6,16 +6,24 @@ import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_yard_sale.svg';
 import shoppingCart from '@icons/icon_shopping_cart.svg';
 import AppContext from '../context/AppContext';
+import MyOrder from '@containers/MyOrder';
 
 
 const Header = () => {
     const [toggle, setToggle] = useState(false);
+    const [toggleOrders, setToggleOrders] = useState(false);
 
-    const {state} = useContext(AppContext); //traio el estado del contexto de la app.
+    
+
+    const {state} = useContext(AppContext); //traigo el estado del contexto de la app. //los usamos para mostrar la cantidad de elementos en el div del carrito
 
     const handleToggle = () => {
         setToggle(!toggle);
-    }
+    };
+
+    const handleToggleOrders = () => {
+        setToggleOrders(!toggleOrders);
+    };
 
     return(  
         <nav>
@@ -59,7 +67,8 @@ const Header = () => {
                     <li>
                         <p className="navbar-email" onClick={handleToggle}>platzi@example.com</p>
                     </li>
-                    <li className="navbar-shopping-cart">
+                    <li className="navbar-shopping-cart"
+                    onClick={handleToggleOrders}>
                         <img
                         src={shoppingCart}
                         alt="shopping cart"
@@ -69,6 +78,7 @@ const Header = () => {
                 </ul>
             </div>
             {toggle && <Menu/>}
+            {toggleOrders && <MyOrder/>}
             
         </nav>
     );
