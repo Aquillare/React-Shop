@@ -5,13 +5,14 @@ import AppContext from "../context/AppContext";
 import close from '@icons/icon_close.png';
 
 const OrderItem = ({product}) => {
+
     const {removeFromCart} = useContext(AppContext);
 
     const handleRemove = (product) => {
         removeFromCart(product);
     }
 
-    return(
+  return(
         <div className="OrderItem">
             <figure>
                    <img src={product.images[0]} alt={product.title}/>
@@ -20,7 +21,8 @@ const OrderItem = ({product}) => {
             <p>${product.price}</p>
             <img src={close} onClick={() => handleRemove(product)}alt="close"/>
         </div>
-    );
+        )
+    
 };
 
 export default OrderItem;

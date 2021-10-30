@@ -1,8 +1,11 @@
 import React from 'react';
 import '../styles/MyAccount.scss';
+import Header from '../components/Header';
 
 const MyAccount = () => {
     return(
+        <>
+        <Header/>
         <div className="MyAccount">
             <div className="MyAccount-container">
                 <h1 className="title">
@@ -29,6 +32,7 @@ const MyAccount = () => {
                 </form>
             </div>
         </div>
+        </>
     );
 };
 
