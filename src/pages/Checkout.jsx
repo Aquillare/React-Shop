@@ -8,6 +8,16 @@ const Checkout = () => {
 
     const {state} = useContext(AppContext);
 
+    const sumTotal = () => {
+        const reducer = (acumulator, currentValue) => acumulator + currentValue.price;
+        const sum = state.cart.reduce(reducer, 0);
+
+        return sum;
+    }
+
+    const date = new Date();
+    const dateNow = `${date.getDay()}.${date.getMonth()}.${date.getFullYear()}`;
+
 
     return(
         <>
@@ -21,11 +31,11 @@ const Checkout = () => {
 
                     <div className="order">
                         <p>
-                            <span>03.25.21</span>
-                            <span>6 articles</span>
+                            <span>{dateNow}</span>
+                            <span>{`${state.cart.length} articles`} </span>
                         </p>
                         <p>
-                            <span>$560.00</span>
+                            <span>{`$ ${sumTotal()}`}</span>
                         </p>
                     </div>
                 </div>

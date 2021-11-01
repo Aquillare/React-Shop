@@ -25,6 +25,10 @@
     font-size: var(--md);
     color: var(--very-light-pink);
 }
+figure img{
+    width: 40px;
+    height: 40px;
+}
 
 @media (max-width: 640px){
     .ProductItem{
