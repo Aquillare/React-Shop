@@ -16,7 +16,7 @@ const Header = () => {
 
     
 
-    const {state} = useContext(AppContext); //traigo el estado del contexto de la app. //los usamos para mostrar la cantidad de elementos en el div del carrito
+    const {state,selectCategory} = useContext(AppContext); //traigo el estado del contexto de la app. //los usamos para mostrar la cantidad de elementos en el div del carrito
 
     const handleToggle = () => {
         setToggle(!toggle);
@@ -25,6 +25,8 @@ const Header = () => {
     const handleToggleOrders = () => {
         setToggleOrders(!toggleOrders);
     };
+
+    console.log(state)
 
     return(  
         <nav>
@@ -43,22 +45,22 @@ const Header = () => {
 
                 <ul>
                     <li>
-                        <Link to="/">All</Link>
+                        <Link to="/" onClick={()=>selectCategory(0)}>All</Link>
                     </li>
                     <li>
-                        <a href="/">Clothes</a>
+                        <Link to="/" onClick={()=>selectCategory('Clothes')}>Clothes</Link>
                     </li>
                     <li>
-                        <a href="/">Electronics</a>
+                        <Link to="/" onClick={()=>selectCategory('Electronics')} >Electronics</Link>
                     </li>
                     <li>
-                        <a href="/">Furnitures</a>
+                        <Link to="/" onClick={()=>selectCategory('Furniture')}>Furnitures</Link>
                     </li>
                     <li>
-                        <a href="/">Toys</a>
+                        <Link to="/" onClick={()=>selectCategory('Toys')}>Toys</Link>
                     </li>
                     <li>
-                        <a href="/">Others</a>
+                        <Link to="/" onClick={()=>selectCategory('Others')}>Others</Link>
                     </li>
                 </ul>
             </div>

@@ -3,6 +3,7 @@ import {useState} from 'react';
 const initialState = {
     cart: [],
     cardsProducts:[],
+    categoryProduct:0,
 }
 
 const useInitialState = () => {
@@ -26,11 +27,19 @@ const useInitialState = () => {
         console.log(state.cardsProducts);
     };
 
+    const selectCategory = (payload) => {
+        setState({
+            ...state,
+            categoryProduct:payload,
+        });
+    };
+
 
     return{
         state,
         addToCart,
-        removeFromCart
+        removeFromCart,
+        selectCategory
     };
 };
 
