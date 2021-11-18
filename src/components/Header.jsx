@@ -1,18 +1,21 @@
 import React,{useState, useContext}from 'react';
 import '@styles/Header.scss';
 
+
 import Menu from '@components/Menu';
 import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_yard_sale.svg';
 import shoppingCart from '@icons/icon_shopping_cart.svg';
 import AppContext from '../context/AppContext';
 import MyOrder from '@containers/MyOrder';
+import MobileMenu from './MobileMenu';
 import { Link } from 'react-router-dom';
 
 
 const Header = () => {
     const [toggle, setToggle] = useState(false);
     const [toggleOrders, setToggleOrders] = useState(false);
+    const [toggleMobileMenu, setMobileMenu] = useState(false);
 
     
 
@@ -26,6 +29,10 @@ const Header = () => {
         setToggleOrders(!toggleOrders);
     };
 
+    const handleToggleMobileMenu = () =>{
+        setMobileMenu(!toggleMobileMenu);
+    }
+
     console.log(state)
 
     return(  
@@ -34,6 +41,7 @@ const Header = () => {
             src={menu}
             alt="menu"
             className="menu"
+            onClick={handleToggleMobileMenu}
             />
 
             <div className="navbar-left">
@@ -82,6 +90,8 @@ const Header = () => {
             </div>
             {toggle && <Menu/>}
             {toggleOrders && <MyOrder/>}
+            {toggleMobileMenu && <MobileMenu/>}
+
             
         </nav>
     );
