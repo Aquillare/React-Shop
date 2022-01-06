@@ -65,7 +65,17 @@ nav{
      right: -3px;
  }
 
- @media (max-width:640px){
+ @media(max-width:772px){
+     nav{
+         padding: 0px 0px;
+     }
+ }
+
+ @media (max-width:760px){
+     nav{
+        padding: 0 24px;
+     }
+
      .menu{
          display: block;
          /* margin-right: 12px; */

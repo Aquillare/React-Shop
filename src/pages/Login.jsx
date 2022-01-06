@@ -1,5 +1,7 @@
 import React, {useRef} from 'react';
 import '../styles/Login.scss';
+import {Link} from 'react-router-dom';
+
 
 
 import logo from '@logos/logo_yard_sale.svg';
@@ -49,14 +51,12 @@ const Login = () => {
                 >
                     Log in
                 </button> 
-                <a href="/">Forgot mi password</a>       
+                <Link to="/recovery-password">Forgot mi password</Link>       
             </form>
 
-            <button 
-            type="submit"
-            className="secondary-button-login sign-up-button"
+            <Link to="/signup"className="secondary-button-login sign-up-button">  
+            Sign up</Link>
            
-            >Sign up</button>
 
 
 

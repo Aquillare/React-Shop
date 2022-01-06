@@ -31,7 +31,7 @@ const MobileMenuCategories = () => {
                             </li>
 
                             <li>
-                                <Link to="/" onClick={()=>selectCategory('Other')}>Other</Link>
+                                <Link to="/" onClick={()=>selectCategory('Others')}>Others</Link>
                             </li>
                         </ul>
     );
